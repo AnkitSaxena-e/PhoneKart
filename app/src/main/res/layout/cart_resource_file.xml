@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:elevation="3dp"
+    app:cardElevation="15dp">
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@drawable/boycover_a"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reCart">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_menu_gallery"
+            android:layout_marginStart="10dp"
+            android:id="@+id/Image_CartSSAA"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/recycler_background"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textStyle="italic"
+            android:layout_toRightOf="@+id/reCart"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/Price_CartSSAA"
+            android:id="@+id/Quantity_CartSSAA"
+            android:text="Qti : 1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/reCart"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:id="@+id/Name_CartSSAA"
+            android:text="Product Name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textStyle="italic"
+            android:layout_toRightOf="@+id/reCart"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/Name_CartSSAA"
+            android:id="@+id/Price_CartSSAA"
+            android:text="Product Price"/>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/Color_CartSSAA"
+                android:text="Color"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/Color_CartSSAA"
+                android:id="@+id/SR_CartSSAA"
+                android:text="SR"/>
+
+        </RelativeLayout>
+
+
+
+<!--        <ImageView-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_alignTop="@+id/re2Cart"-->
+<!--            android:layout_marginTop="-80dp"-->
+<!--            android:src="@drawable/cropcircularicon"/>-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/re2Cart"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_below="@id/reCart">-->
+
+<!--            <Button-->
+<!--                android:layout_width="179dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:text="Edit"-->
+<!--               android:background="@drawable/boycover_a"-->
+<!--                android:id="@+id/Edit_CartSS"/>-->
+
+<!--            <Button-->
+<!--                android:layout_width="179dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:background="@drawable/boycover_a"-->
+<!--                android:text="Remove"-->
+<!--                android:layout_toRightOf="@+id/Edit_CartSS"-->
+<!--                android:id="@+id/Remove_CartSS"/>-->
+
+<!--        </RelativeLayout>-->
+
+    </RelativeLayout>
+
+</RelativeLayout>

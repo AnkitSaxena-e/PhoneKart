@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ADSeeUserActivity">
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_view_adv_"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Rerererererer"
+        android:layout_below="@+id/search_view_adv_"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"/>
+
+</RelativeLayout>
+
+
+    <!--        <RelativeLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content">-->
+
+    <!--            <Button-->
+    <!--                android:id="@+id/phone"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_marginEnd="6dp"-->
+    <!--                android:background="@drawable/phone_cat"-->
+    <!--                android:layout_height="50dp"-->
+    <!--                android:layout_alignParentTop="true"-->
+    <!--                android:layout_marginStart="6dp"/>-->
+
+    <!--            <Button-->
+    <!--                android:id="@+id/earphone"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_marginEnd="6dp"-->
+    <!--                android:background="@drawable/hammer_cattt"-->
+    <!--                android:layout_height="50dp"-->
+    <!--                android:layout_marginStart="6dp"-->
+    <!--                android:layout_marginTop="3dp"-->
+    <!--                android:layout_below="@+id/phone"/>-->
+
+    <!--            <Button-->
+    <!--                android:id="@+id/headphone"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_marginEnd="6dp"-->
+    <!--                android:background="@drawable/print_mug_cattt"-->
+    <!--                android:layout_height="50dp"-->
+    <!--                android:layout_marginStart="6dp"-->
+    <!--                android:layout_marginTop="3dp"-->
+    <!--                android:layout_below="@+id/earphone"/>-->
+
+    <!--            <Button-->
+    <!--                android:id="@+id/speakers"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_marginEnd="6dp"-->
+    <!--                android:background="@drawable/print_pendent_cattt"-->
+    <!--                android:layout_height="50dp"-->
+    <!--                android:layout_marginStart="6dp"-->
+    <!--                android:layout_marginTop="3dp"-->
+    <!--                android:layout_below="@+id/headphone"/>-->
+
+    <!--            <Button-->
+    <!--                android:id="@+id/vr"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_marginEnd="6dp"-->
+    <!--                android:background="@drawable/print_pellow_cattt"-->
+    <!--                android:layout_height="50dp"-->
+    <!--                android:layout_marginStart="6dp"-->
+    <!--                android:layout_below="@+id/speakers"-->
+    <!--                android:layout_marginTop="3dp"/>-->
+
+    <!--    </RelativeLayout>-->

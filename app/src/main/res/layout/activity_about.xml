@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backbackbackback"
+    tools:context=".AboutActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/lplp"
+        android:elevation="0dp"
+        android:background="@drawable/square_back"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/Theme.STSCom.PopupOverlay" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:layout_margin="8dp"
+            android:id="@+id/back_sett_about"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@+id/back_sett_about" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lplp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:text="About"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/Theme.STSCom.PopupOverlay"
+                android:background="@drawable/square_back"
+                android:textColor="@color/white"
+                android:gravity="center|top"
+                android:textStyle="italic"
+                android:textSize="20dp"
+                android:padding="8dp"/>
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="70dp"
+                android:id="@+id/belolololo"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/image_placeholder"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This is"
+                android:textSize="20dp"
+                android:background="@drawable/card_background"
+                android:elevation="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@+id/belolololo"
+                android:id="@+id/AboutA"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AboutA"
+                android:background="@drawable/card_background"
+                android:elevation="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/rererere">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="If you want to meet us here is our Location - "
+                    android:id="@+id/yayayaya"
+                    android:padding="5dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_below="@+id/yayayaya"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/abdf"
+                    android:padding="5dp"
+                    android:textSize="16dp"
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/black"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_background"
+                android:elevation="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/rererere">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contect No."
+                    android:id="@+id/tA"
+                    android:padding="5dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Instagram"
+                    android:textSize="20dp"
+                    android:layout_below="@+id/tA"
+                    android:id="@+id/instaAnand"
+                    android:padding="5dp"
+                    android:textStyle="bold|italic"
+                    android:textColor="#FF0000"
+                    />
+
+                <!--    Uri uri = Uri.parse("http://instagram.com/_u/xxx");-->
+                <!--    Intent likeIng = new Intent(Intent.ACTION_VIEW, uri);-->
+
+                <!--    likeIng.setPackage("com.instagram.android");-->
+
+                <!--    try {-->
+                <!--    startActivity(likeIng);-->
+                <!--    } catch (ActivityNotFoundException e) {-->
+                <!--    startActivity(new Intent(Intent.ACTION_VIEW,-->
+                <!--    Uri.parse("http://instagram.com/xxx")));-->
+                <!--    }-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="App Created by - Ankit Saxena"
+                    android:layout_below="@+id/instaAnand"
+                    android:id="@+id/jkjk"
+                    android:padding="5dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Instagram"
+                    android:textSize="20dp"
+                    android:layout_below="@+id/jkjk"
+                    android:id="@+id/instaMe"
+                    android:padding="5dp"
+                    android:textStyle="bold|italic"
+                    android:textColor="#FF0000"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

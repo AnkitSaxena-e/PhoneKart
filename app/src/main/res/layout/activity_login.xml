@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backbackbackback"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:background="@drawable/main_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="150dp">
+
+        <TextView
+            android:id="@+id/ForgotP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Passward_Login"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="79dp"
+            android:layout_toEndOf="@+id/Remember"
+            android:text="Forgot Passward"
+            android:textColor="@color/gray"/>
+
+        <CheckBox
+            android:id="@+id/Remember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Passward_Login"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:text="Remember Me"
+            android:textColor="@color/gray" />
+
+
+        <EditText
+            android:id="@+id/Number_Login"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/loginbutton"
+            android:autofillHints="UserId"
+            android:textSize="15sp"
+            android:textStyle="bold|italic"
+            android:ems="10"
+            android:padding="10dp"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray"/>
+
+        <EditText
+            android:id="@+id/Passward_Login"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="40dp"
+            android:background="@drawable/loginbutton"
+            android:layout_below="@+id/ffff"
+            android:textSize="15sp"
+            android:textStyle="bold|italic"
+            android:autofillHints="Password"
+            android:ems="10"
+            android:inputType="none"
+            android:padding="10dp"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Id : "
+            android:layout_marginStart="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password : "
+            android:layout_below="@+id/Number_Login"
+            android:layout_marginTop="10dp"
+            android:id="@+id/ffff"
+            android:layout_marginStart="15dp"/>
+
+        <Button
+            android:id="@+id/Join_login"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/r_square_back"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold|italic"
+            android:layout_below="@+id/ForgotP"
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp"
+            android:text="Login"
+            android:textColor="@color/white"/>
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignRight="@+id/Passward_Login"
+            android:layout_below="@+id/Number_Login"
+            android:background="@drawable/ic_visibility_off"
+            android:layout_marginTop="34dp"
+            android:id="@+id/Show"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/Admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Join_login"
+            android:layout_marginTop="3dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="I am an Admin"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/NotAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Join_login"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:text="I am not an Admin"
+            android:textColor="@color/gray"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backbackbackback"
+    tools:context=".OrderPlacedActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/oooooooooooooo"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimary"/>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ddddddddddddd"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/conferm_order"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:layout_below="@+id/ddddddddddddd"
+        android:id="@+id/llllllll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-14dp"
+        android:text="Thank You"
+        android:textStyle="bold|italic"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        android:layout_below="@+id/llllllll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:text="Your Order has benn Placed Successfully"
+        android:textStyle="bold|italic"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/oooooooooooooo">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="order id"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/orderId"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="You can check Order and Delivery Details in the Order Section"
+            android:id="@+id/fffffffffff"
+            android:layout_below="@+id/orderId"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expected Delivery within Today."
+            android:id="@+id/ddddddd"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/blueDark"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/fffffffffff"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/ddddddd"
+            android:id="@+id/contiImage"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/homeicon"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue Shoppig"
+            android:textSize="15dp"
+            android:textStyle="italic|bold"
+            android:textColor="@color/blueDark"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/ssssssss"
+            android:layout_below="@+id/contiImage"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

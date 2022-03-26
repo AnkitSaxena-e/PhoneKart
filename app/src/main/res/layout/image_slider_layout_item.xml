@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:padding="2dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/recycler_background">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/recycler_background"
+        android:padding="5dp"
+        android:src="@drawable/image_placeholder"
+        android:id="@+id/iv_auto_image_slider"/>
+
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backbackbackback"
+    tools:context=".Fragments.SlideshowFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/Logout_Setting_first"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/costomerSupport"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/loginbutton"
+            android:text="Logout"
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/yourAccount"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/loginbutton"
+            android:gravity="center"
+            android:text="Your Account"
+            android:textSize="18dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/aboutL"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/changePasswardL"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/loginbutton"
+            android:gravity="center"
+            android:text="About"
+            android:textSize="18dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/costomerSupport"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/aboutL"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/loginbutton"
+            android:gravity="center"
+            android:text="Customer Support"
+            android:textSize="18dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/changePasswardL"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/yourAccount"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/loginbutton"
+            android:gravity="center"
+            android:text="Change Password"
+            android:textSize="18dp"
+            android:textStyle="bold|italic" />
+    </RelativeLayout>
+
+</RelativeLayout>

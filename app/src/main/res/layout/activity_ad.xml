@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ADActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ad Updape Panal"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        android:id="@+id/adddddd"/>
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_below="@id/adddddd"
+            android:id="@+id/viewPagerShow"
+            android:background="@drawable/recycler_background"
+            android:layout_margin="5dp"
+            android:elevation="3dp"/>
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:id="@+id/indicator"
+            android:layout_below="@+id/viewPagerShow"
+            android:padding="10dp"
+            android:layout_marginTop="-30dp"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:text="Edit Ad"
+            android:id="@+id/editAd"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/viewPagerShow"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/svv"
+            android:layout_below="@id/editAd"
+            android:layout_marginTop="10dp">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:fillViewport="true"
+                android:measureAllChildren="false"
+                android:scrollbars="none"
+                tools:ignore="MissingConstraints">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="305dp"
+                        android:layout_height="290dp"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/PicPhoto18"
+                        android:src="@drawable/select_product_image"/>
+
+                    <ImageView
+                        android:layout_width="305dp"
+                        android:layout_height="290dp"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/PicPhoto28"
+                        android:layout_toRightOf="@+id/PicPhoto18"
+                        android:src="@drawable/select_product_image"/>
+
+                    <ImageView
+                        android:layout_width="305dp"
+                        android:layout_height="290dp"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/PicPhoto38"
+                        android:layout_toRightOf="@+id/PicPhoto28"
+                        android:src="@drawable/select_product_image"/>
+
+                    <ImageView
+                        android:layout_width="305dp"
+                        android:layout_height="290dp"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/PicPhoto48"
+                        android:layout_toRightOf="@+id/PicPhoto38"
+                        android:src="@drawable/select_product_image"/>
+
+                    <ImageView
+                        android:layout_width="305dp"
+                        android:layout_height="290dp"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/PicPhoto58"
+                        android:layout_toRightOf="@+id/PicPhoto48"
+                        android:src="@drawable/select_product_image"/>
+                </RelativeLayout>
+
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/upload_listll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/svv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Add View"
+        android:layout_below="@+id/upload_listll"
+        android:id="@+id/addtheAdd"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textStyle="italic|bold"
+        android:textColor="@color/blueDark"
+        android:background="@drawable/loginbutton"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:text="Upload Ad"
+        android:layout_below="@+id/addtheAdd"
+        android:id="@+id/uploadAdd"
+        android:layout_margin="5dp"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:textSize="20dp"
+        android:textStyle="italic|bold"
+        android:textColor="@color/blueDark"
+        android:background="@drawable/loginbutton"
+        android:gravity="center"
+        />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/CatNameAddd"
+            android:hint="Num"
+            android:layout_below="@+id/uploadAdd"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:id="@+id/AddCategoryAdd"
+            android:layout_below="@+id/CatNameAddd"
+            android:text="Add"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"/>
+
+    </RelativeLayout>
+</ScrollView>

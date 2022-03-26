@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5sp"
+    android:layout_marginStart="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginEnd="5sp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/address_show_background">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:layout_marginStart="10dp"
+            android:id="@+id/Image_OrderSS"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_toRightOf="@+id/Image_OrderSS"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/black"
+            android:id="@+id/Name_OrdereSS"
+            android:text="Product Name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_toRightOf="@+id/Image_OrderSS"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic|bold"
+            android:textColor="@color/black"
+            android:layout_below="@+id/Name_OrdereSS"
+            android:id="@+id/Quantity_OrderSS"
+            android:text="Product Quantity"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textStyle="bold|italic"
+            android:layout_toRightOf="@+id/Image_OrderSS"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/Quantity_OrderSS"
+            android:text="Product Price"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/Quantity_OrderSS"
+            android:text="Color"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/Name_OrdereSS"
+            android:text="Color"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

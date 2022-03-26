@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add New Iterms"
+            android:textStyle="bold|italic"
+            android:textColor="@color/blueDark"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:id="@+id/Add"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/Add">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/loginbutton"
+                    android:textColor="@color/blueDark"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="6dp"
+                    android:textStyle="bold|italic"
+                    android:textSize="15sp"
+                    android:text="Smart Phone" />
+
+                <Button
+                    android:id="@+id/basicphone"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/loginbutton"
+                    android:layout_below="@+id/phone"
+                    android:textColor="@color/blueDark"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="6dp"
+                    android:textStyle="bold|italic"
+                    android:textSize="15sp"
+                    android:text="Basic Phone" />
+
+                <Button
+                    android:id="@+id/earphone"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/loginbutton"
+                    android:textColor="@color/blueDark"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/cameraProtectiveGlass"
+                    android:textStyle="bold|italic"
+                    android:textSize="15sp"
+                    android:text="Ear Phone"/>
+
+                <Button
+                    android:id="@+id/headphone"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/loginbutton"
+                    android:textColor="@color/blueDark"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/earphone"
+                    android:textStyle="bold|italic"
+                    android:textSize="15sp"
+                    android:text="HeadPhones"/>
+
+                <Button
+                    android:id="@+id/speakers"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/loginbutton"
+                    android:textColor="@color/blueDark"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/bluetooth"
+                    android:textStyle="bold|italic"
+                    android:textSize="15sp"
+                    android:text="Bluetooth Speaker"/>
+
+                <Button
+                    android:id="@+id/tampard"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/loginbutton"
+                    android:textColor="@color/blueDark"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/boycover"
+                    android:textStyle="bold|italic"
+                    android:textSize="15sp"
+                    android:text="Tampard"/>
+
+                <Button
+                    android:id="@+id/hammer"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/loginbutton"
+                    android:textColor="@color/blueDark"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/tampard"
+                    android:textStyle="bold|italic"
+                    android:textSize="15sp"
+                    android:text="Hammer"/>
+
+                <Button
+                    android:id="@+id/fancy_cover"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/loginbutton"
+                    android:textColor="@color/blueDark"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/basicphone"
+                    android:textStyle="bold|italic"
+                    android:textSize="15sp"
+                    android:text="Latest Cover"/>
+
+                <Button
+                    android:id="@+id/girlCover"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/loginbutton"
+                    android:textColor="@color/blueDark"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/fancy_cover"
+                    android:textStyle="bold|italic"
+                    android:textSize="15sp"
+                    android:text="Girl Cover"/>
+
+                <Button
+                    android:id="@+id/boycover"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/loginbutton"
+                    android:textColor="@color/blueDark"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/girlCover"
+                    android:textStyle="bold|italic"
+                    android:textSize="15sp"
+                    android:text="Boy Cover"/>
+
+                <Button
+                    android:id="@+id/tiktokacc"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/loginbutton"
+                    android:textColor="@color/blueDark"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/watches"
+                    android:textStyle="bold|italic"
+                    android:textSize="15sp"
+                    android:text="Tik Tok Accesories"/>
+
+                <Button
+                    android:id="@+id/antiBlueGlass"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/loginbutton"
+                    android:textColor="@color/blueDark"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/hammer"
+                    android:textStyle="bold|italic"
+                    android:textSize="15sp"
+                    android:text="Anti Blue Glass"/>
+
+                <Button
+                    android:id="@+id/matteGlass"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/loginbutton"
+                    android:textColor="@color/blueDark"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/antiBlueGlass"
+                    android:textStyle="bold|italic"
+                    android:textSize="15sp"
+                    android:text="Matte Glass"/>
+
+                <Button
+                    android:id="@+id/oodGlass"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/loginbutton"
+                    android:textColor="@color/blueDark"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/matteGlass"
+                    android:textStyle="bold|italic"
+                    android:textSize="15sp"
+                    android:text="11D Glass"/>
+
+                <Button
+                    android:id="@+id/specialGlass"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/loginbutton"
+                    android:textColor="@color/blueDark"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/oodGlass"
+                    android:textStyle="bold|italic"
+                    android:textSize="15sp"
+                    android:text="Special Glass"/>
+
+                <Button
+                    android:id="@+id/cameraProtectiveGlass"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/loginbutton"
+                    android:textColor="@color/blueDark"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/specialGlass"
+                    android:textStyle="bold|italic"
+                    android:textSize="15sp"
+                    android:text="Camera Protective Glass"/>
+
+                <Button
+                    android:id="@+id/stand"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/loginbutton"
+                    android:textColor="@color/blueDark"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/speakers"
+                    android:textStyle="bold|italic"
+                    android:textSize="15sp"
+                    android:text="Mobile Stand"/>
+
+                <Button
+                    android:id="@+id/printCover"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/loginbutton"
+                    android:textColor="@color/blueDark"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/pubg"
+                    android:textStyle="bold|italic"
+                    android:textSize="15sp"
+                    android:text="Print Covers"/>
+
+                <Button
+                    android:id="@+id/printPellow"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/loginbutton"
+                    android:textColor="@color/blueDark"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/printCover"
+                    android:textStyle="bold|italic"
+                    android:textSize="15sp"
+                    android:text="Print Pellow"/>
+
+                <Button
+                    android:id="@+id/printMug"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/loginbutton"
+                    android:textColor="@color/blueDark"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/printPellow"
+                    android:textStyle="bold|italic"
+                    android:textSize="15sp"
+                    android:text="Print Mug"/>
+
+                <Button
+                    android:id="@+id/printPandent"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/loginbutton"
+                    android:textColor="@color/blueDark"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/printMug"
+                    android:textStyle="bold|italic"
+                    android:textSize="15sp"
+                    android:text="Print Pandant"/>
+
+                <Button
+                    android:id="@+id/printSpeaker"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/loginbutton"
+                    android:textColor="@color/blueDark"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/printPandent"
+                    android:layout_marginStart="6dp"
+                    android:textStyle="bold|italic"
+                    android:textSize="15sp"
+                    android:text="Print Speaker" />
+
+                <Button
+                    android:id="@+id/watches"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/loginbutton"
+                    android:textColor="@color/blueDark"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/stand"
+                    android:textStyle="bold|italic"
+                    android:textSize="15sp"
+                    android:text="Smart Watches"/>
+
+                <Button
+                    android:id="@+id/accesorier"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/loginbutton"
+                    android:textColor="@color/blueDark"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="80dp"
+                    android:layout_below="@+id/printPandent"
+                    android:textStyle="bold|italic"
+                    android:textSize="15sp"
+                    android:text="Accesories"/>
+
+                <Button
+                    android:id="@+id/pubg"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/loginbutton"
+                    android:textColor="@color/blueDark"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/tiktokacc"
+                    android:textStyle="bold|italic"
+                    android:textSize="15sp"
+                    android:text="Pubg Mobile Trigger"/>
+
+                <Button
+                    android:id="@+id/bluetooth"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/loginbutton"
+                    android:textColor="@color/blueDark"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/headphone"
+                    android:textStyle="bold|italic"
+                    android:textSize="15sp"
+                    android:text="Bluetooth"/>
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <Button
+                        android:id="@+id/Check_Order"
+                        android:layout_width="250dp"
+                        android:background="@drawable/joinbutton"
+                        android:layout_height="60dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="3dp"
+                        android:layout_alignTop="@+id/User_Information"
+                        android:textStyle="bold|italic"
+                        android:textSize="15sp"
+                        android:text="Check Orders"
+                        android:textColor="@color/white"/>
+
+                    <Button
+                        android:id="@+id/Manage_Order"
+                        android:layout_width="250dp"
+                        android:background="@drawable/joinbutton"
+                        android:layout_height="60dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/Logout_Admin"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="6dp"
+                        android:textStyle="bold|italic"
+                        android:textSize="15sp"
+                        android:text="Manage Orders"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/User_Information"
+                        android:layout_width="250dp"
+                        android:background="@drawable/joinbutton"
+                        android:layout_height="60dp"
+                        android:layout_alignTop="@+id/Manage_Order"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="3dp"
+                        android:textStyle="bold|italic"
+                        android:textSize="15sp"
+                        android:text="User Info"
+                        android:textColor="@color/white"/>
+
+                    <Button
+                        android:id="@+id/PrintThings"
+                        android:layout_width="250dp"
+                        android:background="@drawable/joinbutton"
+                        android:layout_height="60dp"
+                        android:textColor="@color/white"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginStart="6dp"
+                        android:textStyle="bold|italic"
+                        android:textSize="15sp"
+                        android:text="Repair Orders"/>
+
+                    <Button
+                        android:id="@+id/AdBaner"
+                        android:layout_width="250dp"
+                        android:background="@drawable/joinbutton"
+                        android:layout_height="60dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginStart="3dp"
+                        android:textStyle="bold|italic"
+                        android:textSize="15sp"
+                        android:text="Manage Banners"
+                        android:textColor="@color/white"/>
+
+                    <Button
+                        android:id="@+id/feedback"
+                        android:layout_width="250dp"
+                        android:background="@drawable/joinbutton"
+                        android:layout_height="60dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginStart="3dp"
+                        android:textStyle="bold|italic"
+                        android:textSize="15sp"
+                        android:text="Feedback"
+                        android:textColor="@color/white"/>
+
+                    <Button
+                        android:id="@+id/Logout_Admin"
+                        android:layout_width="250dp"
+                        android:background="@drawable/joinbutton"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="6dp"
+                        android:textStyle="bold|italic"
+                        android:textSize="15sp"
+                        android:text="Logout"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backbackbackback"
+    tools:context=".Fragments.AdminSeeUsersFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="All Orders"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:id="@+id/belo"
+        android:background="@color/colorPrimary"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RePrintShowLL"
+        android:layout_below="@+id/belo"
+        android:padding="10dp"/>
+
+</RelativeLayout>

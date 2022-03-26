@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminSeeOrderActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/colorPrimary"
+            android:id="@+id/kgjh">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Orders"
+                android:textColor="@color/white"
+                android:textStyle="italic"
+                android:textSize="25dp"
+                android:padding="5dp"
+                android:background="@color/colorPrimary"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gfgfgf"
+            android:layout_below="@+id/kgjh">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/N1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textStyle="italic|bold"
+                    android:textSize="18dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="2dp"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="2dp"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/see_order_name"
+                    android:background="@drawable/lineline"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/copy_past"
+                    android:id="@+id/Name_C"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+    <!--        Name-->
+    <!--        NumberO-->
+    <!--        ONO-->
+    <!--        Address-->
+    <!--        From-->
+    <!--        To-->
+    <!--        D & T-->
+    <!--        DeliDeta-->
+    <!--        Return-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/N2"
+                android:layout_below="@+id/N1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textStyle="italic|bold"
+                    android:textSize="18dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="2dp"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="2dp"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/see_order_num"
+                    android:background="@drawable/lineline"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/copy_past"
+                    android:id="@+id/num_C"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/N3"
+                android:layout_below="@+id/N2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textStyle="italic|bold"
+                    android:textSize="18dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="2dp"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="2dp"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/see_order_Onum"
+                    android:background="@drawable/lineline"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/copy_past"
+                    android:id="@+id/Onum_C"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/N4"
+                android:layout_below="@+id/N3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textStyle="italic|bold"
+                    android:textSize="18dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="2dp"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="2dp"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/see_order_address"
+                    android:background="@drawable/lineline"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/copy_past"
+                    android:id="@+id/address_C"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/N5"
+                android:layout_below="@+id/N4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textStyle="italic|bold"
+                    android:textSize="18dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="2dp"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="2dp"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/see_order_from"
+                    android:background="@drawable/lineline"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/copy_past"
+                    android:id="@+id/from_C"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/N6"
+                android:layout_below="@+id/N5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textStyle="italic|bold"
+                    android:textSize="18dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="2dp"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="2dp"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/see_order_to"
+                    android:background="@drawable/lineline"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/copy_past"
+                    android:id="@+id/to_C"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/N7"
+                android:layout_below="@+id/N6">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textStyle="italic|bold"
+                    android:textSize="18dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="2dp"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="2dp"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/see_order_pid"
+                    android:background="@drawable/lineline"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/copy_past"
+                    android:id="@+id/pid_C"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/N8"
+                android:layout_below="@+id/N7">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textStyle="italic|bold"
+                    android:textSize="18dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="2dp"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="2dp"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/see_order_detaildate"
+                    android:background="@drawable/lineline"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/copy_past"
+                    android:id="@+id/detaildate_C"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/N8">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textStyle="italic|bold"
+                    android:textSize="18dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="2dp"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="2dp"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/see_order_return"
+                    android:background="@drawable/lineline"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/copy_past"
+                    android:id="@+id/return_C"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gfgfgf"
+            android:layout_marginTop="20dp"
+            android:id="@+id/plpl"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/address_show_background"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/Product_Image_IIOOO"
+                android:scaleType="centerCrop"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/Product_Image_IIOOO">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Product Name"
+                    android:id="@+id/Product_Name_IIOOO"
+                    android:paddingLeft="5dp"
+                    android:textStyle="italic|bold"
+                    android:textColor="@color/colorPrimary"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/Product_Name_IIOOO"
+                    android:text="Product Price"
+                    android:id="@+id/Product_Price_IIOOO"
+                    android:paddingLeft="5dp"
+                    android:textStyle="italic|bold"
+                    android:textColor="@color/colorPrimary"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/Product_Price_IIOOO"
+                    android:text="Product Quantity"
+                    android:id="@+id/Product_Qun_IIOOO"
+                    android:paddingLeft="5dp"
+                    android:textStyle="italic|bold"
+                    android:textColor="@color/colorPrimary"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="S/R"
+                    android:textSize="18dp"
+                    android:paddingLeft="5dp"
+                    android:textStyle="italic|bold"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/Snr_PP_BBBB_IIOOO"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Color"
+                    android:textSize="18dp"
+                    android:paddingLeft="5dp"
+                    android:layout_below="@+id/Snr_PP_BBBB_IIOOO"
+                    android:textStyle="italic|bold"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/Color_PP_BBBB_IIOOO"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/Dele_Order"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/r_square_back"
+            android:layout_margin="30dp"
+            android:textStyle="bold|italic"
+            android:layout_below="@+id/plpl"
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp"
+            android:text="Remove Order"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+</ScrollView>

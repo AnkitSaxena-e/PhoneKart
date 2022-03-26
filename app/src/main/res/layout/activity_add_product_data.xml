@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backbackbackback"
+    tools:context=".AddProductDataActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/lplpddpl"
+        android:elevation="0dp"
+        android:background="@drawable/square_back"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/Theme.STSCom.PopupOverlay" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:layout_margin="8dp"
+            android:id="@+id/back_sett_add_pro"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Your Product"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@+id/back_sett_add_pro" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/lplpddpl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="48dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <RelativeLayout
+                android:id="@+id/asasasas"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_below="@+id/svvvA"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-150dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/_nlextra_background"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true">
+
+                    <TextView
+                        android:id="@+id/Product_Name_dataA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginLeft="3dp"
+                        android:gravity="left"
+                        android:padding="5dp"
+                        android:text="Product Name"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:textStyle="bold|italic" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/svvvA"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_alignParentTop="true"
+                android:layout_margin="30dp"
+                android:background="@drawable/boycover_a">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/viewPagerShow_Add_P_Data"/>
+
+                <com.viewpagerindicator.CirclePageIndicator
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/indicator_Add_P_Data"
+                    android:layout_below="@+id/viewPagerShow_Add_P_Data"
+                    android:padding="10dp"
+                    android:layout_marginTop="-30dp"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <Spinner
+                android:id="@+id/colorSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/loginbutton"
+                android:layout_below="@id/asasasas"
+                android:layout_margin="10dp" />
+
+            <Spinner
+                android:id="@+id/snrSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/loginbutton"
+                android:layout_below="@id/colorSpinner"
+                android:layout_margin="10dp" />
+
+            <EditText
+                android:id="@+id/SStockAA"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/loginbutton"
+                android:layout_below="@+id/snrSpinner"
+                android:padding="10dp"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:hint="Your Stock" />
+
+            <EditText
+                android:id="@+id/SPriceAA"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/SStockAA"
+                android:background="@drawable/loginbutton"
+                android:padding="10dp"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:hint="Your Price" />
+
+            <TextView
+                android:id="@+id/SubButtAdd"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SPriceAA"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="18dp"
+                android:background="@drawable/joinbutton"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

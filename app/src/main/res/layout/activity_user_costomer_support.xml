@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backbackbackback"
+    tools:context=".UserCostomerSupportActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/lplpddlss"
+        android:elevation="0dp"
+        android:background="@drawable/square_back"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/Theme.STSCom.PopupOverlay" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:layout_margin="8dp"
+            android:id="@+id/back_sett_ucs"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Costomer Support"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@+id/back_sett_ucs" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lplpddlss">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:text="Customer Support"
+            android:background="@color/gray"
+            android:textColor="@color/white"
+            android:gravity="center|top"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            android:padding="8dp"/>
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="70dp"
+            android:id="@+id/belolololo"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/image_placeholder"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/juju"
+            android:background="@drawable/recycler_view_background_new"
+            android:layout_below="@+id/belolololo">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="If you want to meet us here is our Location - "
+                android:id="@+id/yayayaya"
+                android:padding="5dp"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Place, Jabalpur(M.P.)"
+                android:layout_below="@+id/yayayaya"
+                android:layout_marginTop="10dp"
+                android:id="@+id/abdf"
+                android:padding="5dp"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone. No."
+                android:id="@+id/tA"
+                android:layout_below="@+id/abdf"
+                android:padding="5dp"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                />
+
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/SandW"
+            android:background="@drawable/loginbutton"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:hint="Complain or Suggetion"
+            android:layout_below="@+id/juju"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:layout_marginTop="5dp"
+            android:elevation="5dp"
+            android:background="@drawable/address_show_background"
+            android:id="@+id/submitBBBBB"
+            android:layout_below="@+id/SandW"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

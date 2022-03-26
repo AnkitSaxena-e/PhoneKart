@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminUserInfoDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addressSeeAdmin"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/UIDProfileA">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="User"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:background="@color/blue"
+            android:id="@+id/below"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/profile"
+            android:padding="2dp"
+            android:layout_below="@+id/below"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/circuler_cat"
+            android:visibility="invisible"
+            android:layout_marginTop="30sp"
+            android:id="@+id/user_profile_image_profileA"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_nameA"
+            android:layout_below="@+id/user_profile_image_profileA"
+            android:text="Name"
+            android:visibility="invisible"
+            android:textColor="@color/blueDark"
+            android:background="@drawable/card_background"
+            android:textStyle="italic|bold"
+            android:padding="6dp"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_numberA"
+            android:layout_below="@+id/profile_nameA"
+            android:text="Number"
+            android:visibility="invisible"
+            android:padding="6dp"
+            android:background="@drawable/card_background"
+            android:textColor="@color/blueDark"
+            android:textStyle="italic|bold"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:paddingLeft="20dp"
+            android:textColor="@color/blueDark"
+            android:id="@+id/PasswardProfileA"
+            android:background="@drawable/card_background"
+            android:layout_below="@+id/profile_numberA"
+            android:text="Passward"
+            android:visibility="invisible"
+            android:textStyle="italic|bold"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:paddingLeft="20dp"
+            android:textColor="@color/blueDark"
+            android:id="@+id/UIDProfileA"
+            android:visibility="invisible"
+            android:background="@drawable/card_background"
+            android:layout_below="@+id/PasswardProfileA"
+            android:text="UID"
+            android:textStyle="italic|bold"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <Button
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/addressSeeAdmin"
+            android:text="See Added Products"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold|italic"
+            android:id="@+id/See_Added_Products"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/joinbutton"/>
+
+        <Button
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/See_Added_Products"
+            android:text="Delete Account"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold|italic"
+            android:id="@+id/Delete_Account"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/joinbutton"/>
+
+        <Button
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/Delete_Account"
+            android:text="Suspend User"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold|italic"
+            android:id="@+id/Sus_User"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/joinbutton"/>
+
+    </RelativeLayout>
+
+</ScrollView>

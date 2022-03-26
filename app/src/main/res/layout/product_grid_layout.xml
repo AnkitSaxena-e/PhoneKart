@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="130dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_marginRight="8dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:layout_marginTop="-40dp"
+            android:padding="5dp"
+            android:layout_below="@+id/ppppppppppppppp"
+            android:background="@drawable/card_background">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <TextView
+                    android:id="@+id/name_Product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="Realmi Narzo 10"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/colo_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="3dp"
+                    android:layout_below="@+id/name_Product"
+                    android:text="White"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/price_Product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/colo_product"
+                    android:gravity="center"
+                    android:text="Price"
+                    android:textSize="11dp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/colo_product"
+                    android:layout_alignParentRight="true">
+
+                    <TextView
+                        android:id="@+id/setDasiReading_Proo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_toRightOf="@+id/iidd"
+                        android:text="4.3"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/iidd"
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="3dp"
+                        android:src="@drawable/ic_baseline_star_24" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:id="@+id/ppppppppppppppp"
+            android:padding="5sp"
+            android:background="@drawable/card_background"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/image_Product"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:contentDescription="@string/action_settings"
+                android:src="@drawable/profile" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backbackbackback"
+    tools:context=".PhoneShowActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/fgth"
+        android:elevation="0dp"
+        android:background="@drawable/square_back"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/Theme.STSCom.PopupOverlay">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/back_sett_phone_show"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_arrow_back_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Products"
+            android:layout_marginStart="20dp"
+            android:layout_centerVertical="true"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@id/back_sett_phone_show"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fgth"
+        android:id="@+id/Show_Phone_reC"
+        android:padding="5dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

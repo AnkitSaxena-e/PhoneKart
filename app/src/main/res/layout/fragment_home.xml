@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pqpq"
+    android:background="@drawable/backbackbackback"
+    tools:context=".Fragments.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:fillViewport="true"
+        android:isScrollContainer="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="12dp"
+                android:padding="5sp"
+                android:id="@+id/slideView"
+                android:background="@drawable/candy"
+                android:layout_below="@+id/svvv"
+                android:layout_marginTop="5dp">
+                <!--           android:layout_below="@+id/linear_home"-->
+
+                <androidx.viewpager.widget.ViewPager
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/candy"
+                    android:id="@+id/viewPagerShow_home"/>
+
+                <com.viewpagerindicator.CirclePageIndicator
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:id="@+id/indicator_home"
+                    android:layout_below="@+id/viewPagerShow_home"
+                    android:padding="10dp"
+                    android:layout_marginTop="-30dp"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sideside"
+                android:layout_below="@+id/slideView"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:text="Deals of the day"
+                    android:padding="3dp"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp"
+                    android:textStyle="bold|italic"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/dealoftheday"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/lineline"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="15sp"
+                    android:id="@+id/viewAll"
+                    android:text="View All" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dealoftheday">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sideRe"
+                        android:orientation="vertical"
+                        android:layout_margin="5dp"
+                        android:scrollbars="vertical"
+                        android:layout_marginTop="5dp"
+                        android:alignmentMode="alignMargins"
+                        android:columnOrderPreserved="false"
+                        android:padding="2dp"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="12dp"
+                android:id="@+id/one"
+                android:layout_below="@+id/sideside">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:text="Phones"
+                    android:padding="3dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold|italic"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/bestOf"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/viewAllA"
+                    android:text="View All"
+                    android:background="@drawable/lineline"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="15sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bestOf">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/grid_fragS"
+                        android:orientation="vertical"
+                        android:layout_margin="5dp"
+                        android:scrollbars="vertical"
+                        android:rowCount="2"
+                        android:layout_marginTop="5dp"
+                        android:alignmentMode="alignMargins"
+                        android:columnOrderPreserved="false"
+                        android:padding="2dp">
+                    </androidx.recyclerview.widget.RecyclerView>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="12dp"
+                android:padding="5dp"
+                android:id="@+id/two"
+                android:layout_below="@+id/slideViewtwo">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:text="Ear Phones"
+                    android:padding="3dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold|italic"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/bestOf_earPhone"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/viewAllA_earPhone"
+                    android:text="View All"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/lineline"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bestOf_earPhone">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/grid_fragS_earPhone"
+                        android:orientation="vertical"
+                        android:layout_margin="5dp"
+                        android:scrollbars="vertical"
+                        android:rowCount="2"
+                        android:layout_marginTop="5dp"
+                        android:alignmentMode="alignMargins"
+                        android:columnOrderPreserved="false"
+                        android:padding="2dp">
+                    </androidx.recyclerview.widget.RecyclerView>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/slideViewtwo"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="12dp"
+                android:layout_below="@+id/one"
+                android:layout_marginTop="5dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="12dp"
+                android:padding="5dp"
+                android:id="@+id/there"
+                android:layout_below="@+id/two">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:text="Head Phones"
+                    android:padding="3dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold|italic"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/bestOf_headPhone"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/viewAllA_headPhone"
+                    android:text="View All"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/lineline"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bestOf_headPhone">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/grid_fragS_headPhone"
+                        android:orientation="vertical"
+                        android:layout_margin="5dp"
+                        android:layout_below="@+id/bestOf_headPhone"
+                        android:scrollbars="vertical"
+                        android:rowCount="2"
+                        android:layout_marginTop="5dp"
+                        android:alignmentMode="alignMargins"
+                        android:columnOrderPreserved="false"
+                        android:padding="2dp">
+                    </androidx.recyclerview.widget.RecyclerView>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="12dp"
+                android:id="@+id/four"
+                android:layout_below="@+id/there">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:text="Stands"
+                    android:padding="3dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold|italic"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/bestOf_stand"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/viewAllA_stand"
+                    android:text="View All"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/lineline"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bestOf_stand">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/grid_fragS_stand"
+                        android:orientation="vertical"
+                        android:scrollbars="vertical"
+                        android:layout_margin="5dp"
+                        android:rowCount="2"
+                        android:layout_marginTop="5dp"
+                        android:alignmentMode="alignMargins"
+                        android:columnOrderPreserved="false"
+                        android:padding="2dp">
+                    </androidx.recyclerview.widget.RecyclerView>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="12dp"
+                android:id="@+id/five">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:text="Virtual Reality"
+                    android:padding="3dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold|italic"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/bestOf_vr"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/viewAllA_vr"
+                    android:text="View All"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/lineline"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bestOf_vr">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/grid_fragS_vr"
+                        android:orientation="vertical"
+                        android:scrollbars="vertical"
+                        android:layout_margin="5dp"
+                        android:rowCount="2"
+                        android:layout_marginTop="5dp"
+                        android:alignmentMode="alignMargins"
+                        android:columnOrderPreserved="false"
+                        android:padding="2dp">
+                    </androidx.recyclerview.widget.RecyclerView>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/five"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

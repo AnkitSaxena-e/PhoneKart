@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/change_back"
+    android:layout_marginBottom="5dp"
+    android:layout_marginStart="3dp"
+    android:layout_marginEnd="3dp"
+    android:background="@drawable/order_background">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:textAlignment="center"
+        android:id="@+id/O_username"
+        android:textStyle="bold|italic"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/white"
+        android:layout_below="@+id/O_username"
+        android:textSize="17dp"
+        android:textAlignment="center"
+        android:id="@+id/O_number"
+        android:textStyle="bold|italic"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="prize"
+        android:id="@+id/O_price"
+        android:textSize="17dp"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="product"
+            android:id="@+id/O_product"
+            android:layout_below="@+id/O_price"
+            android:textSize="17dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textStyle="bold|italic" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

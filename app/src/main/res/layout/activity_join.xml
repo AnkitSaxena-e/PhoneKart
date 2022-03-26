@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoinActivity">
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+        <Spinner
+            android:layout_height="40dp"
+            android:layout_width="85dp"
+            android:layout_below="@+id/Name_Join"
+            android:layout_marginTop="2dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/loginbutton"
+            android:id="@+id/spinnerCountries"/>
+
+        <EditText
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/loginbutton"
+            android:id="@+id/Name_Join"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:hint="Name"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <EditText
+            android:layout_height="40dp"
+            android:layout_width="238dp"
+            android:background="@drawable/loginbutton"
+            android:id="@+id/Number_Join"
+            android:ems="10"
+            android:hint="Phone"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/Name_Join"
+            android:layout_marginTop="2dp"
+            android:padding="10dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimaryDark"
+            android:inputType="number"
+            android:layout_alignParentRight="true"/>
+
+        <EditText
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:layout_below="@id/Number_Join"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/loginbutton"
+            android:id="@+id/Passward_Join"
+            android:ems="10"
+            android:hint="Passward"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <ImageButton
+            android:layout_height="30dp"
+            android:layout_width="40dp"
+            android:layout_below="@+id/Number_Join"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/ic_visibility_off"
+            android:id="@+id/Show_Join"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@+id/Passward_Login"/>
+
+        <EditText
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/Passward_Join"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/loginbutton"
+            android:id="@+id/Passward_Conferm_Join"
+            android:ems="10"
+            android:hint="Conferm Passward"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="400dp"
+            android:background="@drawable/joinbutton"
+            android:id="@+id/Join_button"
+            android:textColor="@color/white"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/Passward_Conferm_Join"
+            android:text="Join Now"
+            android:textStyle="normal|bold|italic"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

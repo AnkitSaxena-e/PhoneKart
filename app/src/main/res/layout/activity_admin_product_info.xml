@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/countainer_kk"
+    android:layout_height="match_parent"
+    tools:context=".AdminProductInfoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="48dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:id="@+id/svvv"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:layout_width="305dp"
+                    android:layout_height="290dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/PicPhoto1S"
+                    android:src="@drawable/select_product_image"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product Name"
+                android:gravity="left"
+                android:layout_marginLeft="3dp"
+                android:padding="5dp"
+                android:layout_below="@+id/svvv"
+                android:layout_margin="5dp"
+                android:id="@+id/Product_Name_data"
+                android:textStyle="bold|italic"
+                android:textSize="17dp"
+                android:textColor="@color/black"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Product_Name_data"
+                android:elevation="5dp"
+                android:layout_margin="5dp"
+                android:id="@+id/belowW">
+
+                <RelativeLayout
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:id="@+id/Product_Price_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:layout_marginLeft="1dp"
+                        android:text="Product Price"
+                        android:layout_toRightOf="@+id/lefttt"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/lefttt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="4dp"
+                        android:text="Rs."
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/Product_Price_data"
+                        android:text="/-"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold|italic" />
+
+                </RelativeLayout>
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:elevation="4dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    app:backGroundColor="@color/white"
+                    android:background="@drawable/address_show_background"
+                    app:textColor="@color/blueAccent"
+                    app:textSize="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    app:initialNumber="1"
+                    app:finalNumber="10"
+                    android:layout_marginRight="5dp"
+                    tools:targetApi="lollipop">
+
+                </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/svvvvvvv"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/card_background"
+                android:elevation="1dp"
+                android:layout_margin="5dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/a">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:textColor="@color/black"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:id="@+id/A"
+                        android:paddingLeft="5dp"
+                        android:gravity="left"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:layout_toRightOf="@+id/A"
+                        android:paddingTop="4dp"
+                        android:id="@+id/name_T"
+                        android:paddingBottom="4dp"
+                        android:textColor="@color/black"
+                        android:paddingLeft="5dp"
+                        android:gravity="left"
+                        android:textSize="15dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/b"
+                    android:layout_below="@+id/a">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Details"
+                        android:textColor="@color/black"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:id="@+id/B"
+                        android:paddingLeft="5dp"
+                        android:gravity="left"
+                        android:layout_marginLeft="4dp"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="Detail"
+                        android:layout_toRightOf="@+id/B"
+                        android:paddingTop="4dp"
+                        android:id="@+id/Detail_T"
+                        android:paddingBottom="4dp"
+                        android:textColor="@color/black"
+                        android:gravity="left"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/b">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Brand"
+                        android:textColor="@color/black"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:id="@+id/D"
+                        android:gravity="left"
+                        android:layout_marginLeft="4dp"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="Brand"
+                        android:layout_toRightOf="@+id/D"
+                        android:paddingTop="4dp"
+                        android:id="@+id/brand_T"
+                        android:paddingBottom="4dp"
+                        android:textColor="@color/black"
+                        android:gravity="left"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/svvvvv"
+                android:background="@drawable/necha_wali_ine"
+                android:layout_below="@id/belowW">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:text="color"
+                            android:paddingRight="15dp"
+                            android:paddingLeft="15dp"
+                            android:layout_margin="2dp"
+                            android:id="@+id/ProColor1"
+                            android:padding="4dp"
+                            android:background="@drawable/_nlextra_background"
+                            android:elevation="3dp"
+                            android:textColor="@color/black"
+                            android:textStyle="italic"
+                            android:textSize="15dp"/>
+
+                    </RelativeLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/svvvvvvv"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/necha_wali_ine"
+                android:layout_below="@id/svvvvv">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:text="SnR"
+                            android:paddingRight="10dp"
+                            android:paddingLeft="10dp"
+                            android:layout_margin="2dp"
+                            android:id="@+id/SnRP1"
+                            android:padding="4dp"
+                            android:background="@drawable/_nlextra_background"
+                            android:elevation="3dp"
+                            android:textColor="@color/black"
+                            android:textStyle="italic"
+                            android:textSize="15dp"/>
+
+                    </RelativeLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/expanded_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

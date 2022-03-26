@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/backbackbackback"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Fragments.CategoriesFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2/32"
+        android:id="@+id/V_232"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:background="@drawable/recycler_view_background_new"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3/32"
+        android:id="@+id/V_332"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:background="@drawable/recycler_view_background_new"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/V_232"
+        android:textSize="20dp"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4/64"
+        android:id="@+id/V_464"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:background="@drawable/recycler_view_background_new"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/V_332"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4/128"
+        android:id="@+id/V_4128"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:background="@drawable/recycler_view_background_new"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/V_464"
+        android:textSize="20dp"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="6/128"
+        android:id="@+id/V_6128"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:background="@drawable/recycler_view_background_new"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/V_4128"
+        android:textStyle="bold"
+        android:layout_marginRight="20dp"
+        android:textSize="20dp"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="6/256"
+        android:id="@+id/V_6256"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/V_6128"
+        android:gravity="center"
+        android:background="@drawable/recycler_view_background_new"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2/16"
+        android:id="@+id/V_216"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:background="@drawable/recycler_view_background_new"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/V_6256"
+        android:layout_marginRight="20dp"
+        android:textSize="20dp"
+        android:padding="10dp"/>
+
+</RelativeLayout>

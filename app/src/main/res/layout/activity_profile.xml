@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/countainer_pr"
+    android:background="@drawable/backbackbackback"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/addressSee"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/updateProfile">
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:background="@drawable/square_back"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:layout_margin="8dp"
+                android:id="@+id/back_sett"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Adress"
+                android:layout_margin="20dp"
+                android:background="@drawable/loginbutton"
+                android:gravity="center"
+                android:layout_below="@id/yuyuyu"
+                android:layout_marginEnd="10dp"
+                android:textSize="17sp"
+                android:id="@+id/updateProfile"
+                android:padding="8dp"
+                android:layout_alignParentEnd="true"/>
+
+            <RelativeLayout
+                android:layout_width="170dp"
+                android:layout_height="160dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="64sp"
+                android:id="@+id/ghjk">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/profile"
+                    android:padding="2dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/circuler_cat"
+                    android:id="@+id/user_profile_image_profile"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="Change DP"
+                    android:layout_marginTop="105dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/goolimage"
+                    android:textColor="@color/white"
+                    android:src="@drawable/ic_baseline_camera_24"
+                    android:layout_marginRight="10dp"
+                    android:textSize="17dp"
+                    android:id="@+id/changePhoto"
+                    android:padding="8dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ghjk"
+                android:id="@+id/yuyu"
+                android:padding="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/back_profile">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/lpl"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_baseline_account_circle_24"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/lpl"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:id="@+id/lolo"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/profile_name"
+                        android:layout_marginTop="5dp"
+                        android:text="Name"
+                        android:layout_below="@+id/lolo"
+                        android:gravity="center"
+                        android:textSize="18sp"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/yuyu"
+                android:id="@+id/yuyuyu"
+                android:padding="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/back_profile">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/lpllll"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_baseline_phone_android_24"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/lpllll"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Number"
+                        android:id="@+id/lolool"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/profile_number"
+                        android:layout_marginTop="5dp"
+                        android:text="Number"
+                        android:layout_below="@+id/lolool"
+                        android:gravity="center"
+                        android:textSize="18sp"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/expanded_imageproo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+</ScrollView>

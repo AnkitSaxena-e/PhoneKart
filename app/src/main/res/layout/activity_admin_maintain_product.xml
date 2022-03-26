@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminMaintainProductActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/svv"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="305dp"
+                android:layout_height="290dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/PicPhoto1_MMMM"
+                android:src="@drawable/select_product_image"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/svv">
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:id="@+id/ProductName_MMMM"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:background="@drawable/loginbutton"
+                android:textStyle="bold|italic"
+                android:layout_centerHorizontal="true"
+                android:hint="Product Name"
+                />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/ProductName_MMMM"
+                android:id="@+id/ProductKeyward_MMMM"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:background="@drawable/loginbutton"
+                android:textStyle="bold|italic"
+                android:hint="Product Keyward"
+                />
+
+            <Button
+                android:id="@+id/AddProduct_MMMM"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone_dissss"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/joinbutton"
+                android:text="Add Product"
+                android:textColor="@color/white"
+                android:textStyle="bold|italic"/>
+
+            <Button
+                android:id="@+id/DeleteProduct_MMMM"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AddProduct_MMMM"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/joinbutton"
+                android:text="Delete Product"
+                android:textColor="@color/white"
+                android:textStyle="bold|italic"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ProductKeyward_MMMM"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:background="@drawable/card_background"
+                android:elevation="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/table_Desscription_A_MMMM">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/a">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:textColor="@color/black"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:id="@+id/A"
+                        android:paddingLeft="5dp"
+                        android:gravity="left"
+                        android:textSize="20dp"/>
+
+                    <EditText
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Name"
+                        android:layout_toRightOf="@+id/A"
+                        android:paddingTop="4dp"
+                        android:id="@+id/name_T_A_MMMM"
+                        android:paddingBottom="4dp"
+                        android:textColor="@color/black"
+                        android:paddingLeft="5dp"
+                        android:gravity="left"
+                        android:textSize="20dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/b"
+                    android:layout_below="@+id/a">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Details"
+                        android:textColor="@color/black"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:id="@+id/B"
+                        android:paddingLeft="5dp"
+                        android:gravity="left"
+                        android:layout_marginLeft="4dp"
+                        android:textSize="20dp"/>
+
+                    <EditText
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Detail"
+                        android:layout_toRightOf="@+id/B"
+                        android:paddingTop="4dp"
+                        android:id="@+id/Detail_T_A_MMMM"
+                        android:paddingBottom="4dp"
+                        android:textColor="@color/black"
+                        android:gravity="left"
+                        android:paddingLeft="5dp"
+                        android:textSize="20dp"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/b">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Brand"
+                        android:textColor="@color/black"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="5dp"
+                        android:id="@+id/D"
+                        android:gravity="left"
+                        android:layout_marginLeft="4dp"
+                        android:textSize="20dp"/>
+
+                    <EditText
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Brand"
+                        android:layout_toRightOf="@+id/D"
+                        android:paddingTop="4dp"
+                        android:id="@+id/brand_T_A_MMMM"
+                        android:paddingBottom="4dp"
+                        android:textColor="@color/black"
+                        android:gravity="left"
+                        android:paddingLeft="5dp"
+                        android:textSize="20dp"/>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/table_Desscription_A_MMMM"
+                android:id="@+id/phone_dissss">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lkjhgfds"
+                    android:layout_centerHorizontal="true">
+
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/ProductColor1_MMMM"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:background="@drawable/loginbutton"
+                        android:textStyle="bold|italic"
+                        android:hint="Color1"
+                        />
+
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/ProductColor2_MMMM"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:layout_toRightOf="@+id/ProductColor1_MMMM"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/loginbutton"
+                        android:textStyle="bold|italic"
+                        android:hint="Color2"
+                        />
+
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/ProductColor3_MMMM"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/ProductColor1_MMMM"
+                        android:padding="10dp"
+                        android:background="@drawable/loginbutton"
+                        android:textSize="14dp"
+                        android:textStyle="bold|italic"
+                        android:hint="Color3"
+                        />
+
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/ProductColor4_MMMM"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/ProductColor1_MMMM"
+                        android:textSize="14dp"
+                        android:padding="10dp"
+                        android:layout_toRightOf="@+id/ProductColor3_MMMM"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/loginbutton"
+                        android:textStyle="bold|italic"
+                        android:hint="Color4"
+                        />
+
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/ProductColor5_MMMM"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14dp"
+                        android:layout_below="@+id/ProductColor3_MMMM"
+                        android:padding="10dp"
+                        android:background="@drawable/loginbutton"
+                        android:textStyle="bold|italic"
+                        android:hint="Color5"
+                        />
+
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/ProductColor6_MMMM"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/ProductColor4_MMMM"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:layout_toRightOf="@+id/ProductColor3_MMMM"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/loginbutton"
+                        android:textStyle="bold|italic"
+                        android:hint="Color6"
+                        />
+
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/ProductColor7_MMMM"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/ProductColor5_MMMM"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:background="@drawable/loginbutton"
+                        android:textStyle="bold|italic"
+                        android:hint="Color7"
+                        />
+
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/ProductColor8_MMMM"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14dp"
+                        android:layout_below="@+id/ProductColor6_MMMM"
+                        android:padding="10dp"
+                        android:layout_toRightOf="@+id/ProductColor7_MMMM"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/loginbutton"
+                        android:textStyle="bold|italic"
+                        android:hint="Color8"
+                        />
+
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:textSize="14dp"
+                        android:id="@+id/ProductColor9_MMMM"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/ProductColor7_MMMM"
+                        android:padding="10dp"
+                        android:background="@drawable/loginbutton"
+                        android:textStyle="bold|italic"
+                        android:hint="Color9"
+                        />
+
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/ProductColor10_MMMM"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/ProductColor8_MMMM"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:layout_toRightOf="@+id/ProductColor9_MMMM"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/loginbutton"
+                        android:textStyle="bold|italic"
+                        android:hint="Color10"
+                        />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/lkjhgfds"
+                    android:id="@+id/mkoiuy"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/loginbutton"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mkoiuy"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/kjhgfdss"
+                    android:layout_centerHorizontal="true">
+
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:textSize="14dp"
+                        android:id="@+id/ProductSR1_MMMM"
+                        android:padding="10dp"
+                        android:background="@drawable/loginbutton"
+                        android:textStyle="bold|italic"
+                        android:hint="Storage n Ram1"
+                        />
+
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/ProductSR2_MMMM"
+                        android:padding="10dp"
+                        android:layout_toRightOf="@+id/ProductSR1_MMMM"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/loginbutton"
+                        android:textStyle="bold|italic"
+                        android:hint="Storage n Ram2"
+                        />
+
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/ProductSR3_MMMM"
+                        android:textSize="14dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/ProductSR1_MMMM"
+                        android:padding="10dp"
+                        android:background="@drawable/loginbutton"
+                        android:textStyle="bold|italic"
+                        android:hint="Storage n Ram3"
+                        />
+
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/ProductSR4_MMMM"
+                        android:textSize="14dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/ProductSR1_MMMM"
+                        android:padding="10dp"
+                        android:layout_toRightOf="@+id/ProductSR3_MMMM"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/loginbutton"
+                        android:textStyle="bold|italic"
+                        android:hint="Storage n Ram4"
+                        />
+
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/ProductSR5_MMMM"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/ProductSR3_MMMM"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:background="@drawable/loginbutton"
+                        android:textStyle="bold|italic"
+                        android:hint="Storage n Ram5"
+                        />
+
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/ProductSR6_MMMM"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/ProductSR3_MMMM"
+                        android:textSize="14dp"
+                        android:padding="10dp"
+                        android:layout_toRightOf="@+id/ProductSR3_MMMM"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/loginbutton"
+                        android:textStyle="bold|italic"
+                        android:hint="Storage n Ram6"
+                        />
+
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/ProductSR7_MMMM"
+                        android:textSize="14dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/ProductSR5_MMMM"
+                        android:padding="10dp"
+                        android:background="@drawable/loginbutton"
+                        android:textStyle="bold|italic"
+                        android:hint="Storage n Ram7"
+                        />
+
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/ProductSR8_MMMM"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/ProductSR6_MMMM"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:layout_toRightOf="@+id/ProductSR7_MMMM"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/loginbutton"
+                        android:textStyle="bold|italic"
+                        android:hint="Storage n Ram8"
+                        />
+
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/ProductSR9_MMMM"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/ProductSR7_MMMM"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:background="@drawable/loginbutton"
+                        android:textStyle="bold|italic"
+                        android:hint="Storage n Ram9"
+                        />
+
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/ProductSR10_MMMM"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/ProductSR8_MMMM"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:layout_toRightOf="@+id/ProductSR9_MMMM"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/loginbutton"
+                        android:textStyle="bold|italic"
+                        android:hint="Storage n Ram10"
+                        />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/kjhgfdss"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/loginbutton"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

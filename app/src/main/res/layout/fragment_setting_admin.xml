@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/backbackbackback"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.AdminSettingFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ujujujuj">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Users"
+            android:textSize="15dp"
+            android:id="@+id/llllll"
+            android:textStyle="italic|bold"
+            android:textColor="@color/white"
+            android:padding="10dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/jjjjjj"
+            android:layout_below="@id/llllll">
+
+            <androidx.appcompat.widget.SearchView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/loginbutton"
+                android:id="@+id/numberSearchAdmin_PPPP"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:textSize="18dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jjjjjj"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/ppp">
+
+            <androidx.appcompat.widget.SearchView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/loginbutton"
+                android:id="@+id/nameSearchAdmin_PPPP"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:textSize="18dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ppp"
+            android:layout_marginBottom="3dp">
+
+            <androidx.appcompat.widget.SearchView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/loginbutton"
+                android:id="@+id/shopSearchAdmin_PPPP"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shop Name"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:textSize="18dp"/>
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/AdminUserData_PPPPpp"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:scrollbars="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/ujujujuj"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:padding="2dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/backbackbackback"
+    android:layout_height="match_parent"
+    tools:context=".ConfermOrderActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/lplpll"
+        android:elevation="0dp"
+        android:background="@drawable/square_back"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/Theme.STSCom.PopupOverlay" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:layout_margin="8dp"
+            android:id="@+id/back_sett_con_order"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Details"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@+id/back_sett_con_order" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lplpll">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/animation">
+
+                <TextView
+                    android:layout_width="3dp"
+                    android:layout_height="3dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/recycler_view_background_new"/>
+
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/recycler_view_background_new"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="45dp"
+                    android:src="@drawable/confirm_ok_green"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello! User User Your total \n Amount is Rs.60000/-"
+                    android:gravity="center"
+                    android:background="@drawable/socosoch"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/blueDark"
+                    android:padding="15dp"
+                    android:id="@+id/total_Price"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold|italic"/>
+
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/Full_Name_Conferm"
+                android:layout_below="@+id/orLine"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:hint="Your Full Name"
+                android:background="@drawable/loginbutton"
+                android:padding="10dp"/>
+
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Full_Name_Conferm"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/Address_Conferm"
+                android:hint="Your Address"
+                android:background="@drawable/loginbutton"
+                android:padding="10dp"/>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Address_Conferm"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:hint="Your Phone Number"
+                android:id="@+id/Phone_Conferm"
+                android:background="@drawable/loginbutton"
+                android:padding="10dp"/>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Phone_Conferm"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:hint="Your City Name"
+                android:id="@+id/City_Conferm"
+                android:background="@drawable/loginbutton"
+                android:padding="10dp"/>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/City_Conferm"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:hint="Your State"
+                android:id="@+id/State_Conferm"
+                android:background="@drawable/loginbutton"
+                android:padding="10dp"/>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/State_Conferm"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:hint="Your Pin"
+                android:id="@+id/Pin_Conferm"
+                android:background="@drawable/loginbutton"
+                android:padding="10dp"/>
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Place Order"
+                android:background="@drawable/joinbutton"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/Place_Button"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/Pin_Conferm"
+                android:textColor="@color/white"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/kiuyt"
+                android:background="@drawable/card_background"
+                android:elevation="3dp"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/animation">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lopl"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="15dp"
+                    android:text="Please Select Your Address"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Recycler_Address"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/lopl"
+                    android:padding="5dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/orLine"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/kiuyt">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/remove11"
+                    android:background="@drawable/loginbutton"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Or "
+                    android:padding="5dp"
+                    android:id="@+id/remove21"
+                    android:background="@drawable/circuler_cat"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20dp"/>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

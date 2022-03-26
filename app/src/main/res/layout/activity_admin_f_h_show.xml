@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminFHShowActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/FirstF"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/loginbutton"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true"
+        android:hint="First Phone Type" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/SecondS"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/loginbutton"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/FirstF"
+        android:layout_centerHorizontal="true"
+        android:hint="Second Phone Type" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/ThirdT"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/loginbutton"
+        android:layout_below="@id/SecondS"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true"
+        android:hint="Third Phone Type" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/ForthF"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/ThirdT"
+        android:padding="10dp"
+        android:background="@drawable/loginbutton"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true"
+        android:hint="Forth Phone Type" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/FiveF"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_below="@+id/ForthF"
+        android:background="@drawable/loginbutton"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true"
+        android:hint="Five Phone Type" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/SixS"
+        android:layout_below="@+id/FiveF"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/loginbutton"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true"
+        android:hint="Six Phone Type" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/joinbutton"
+        android:textStyle="bold|italic"
+        android:text="Add It"
+        android:id="@+id/AddFhoneF"
+        android:layout_below="@+id/SixS"/>
+
+</RelativeLayout>

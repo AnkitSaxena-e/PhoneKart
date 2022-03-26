@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backbackbackback"
+    tools:context=".EditAddressActivity">
+
+        <RelativeLayout
+            android:id="@+id/lplpaa"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/square_back"
+            android:elevation="0dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/Theme.STSCom.PopupOverlay">
+
+            <ImageView
+                android:id="@+id/back_sett_edit_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="8dp"
+                android:src="@drawable/ic_baseline_arrow_back_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/back_sett_edit_add"
+                android:text="Your Address"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lplpaa">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/aAA"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name :"
+                    android:id="@+id/kfkfd"/>
+
+                <EditText
+                    android:id="@+id/Change_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/kfkfd"
+                    android:background="@drawable/loginbutton"
+                    android:ems="10"
+                    android:padding="10dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:id="@+id/lala"
+                android:layout_below="@+id/aAA">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Number :"
+                    android:id="@+id/kfkfa"/>
+
+                <EditText
+                    android:id="@+id/Change_Number"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/kfkfa"
+                    android:background="@drawable/loginbutton"
+                    android:ems="10"
+                    android:padding="10dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lala"
+                android:id="@+id/awaw"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address :"
+                    android:id="@+id/kfkf"/>
+
+                <EditText
+                    android:id="@+id/Change_Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/kfkf"
+                    android:background="@drawable/loginbutton"
+                    android:ems="10"
+                    android:padding="10dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gg"
+                android:layout_below="@+id/awaw"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="City :"
+                    android:id="@+id/kfkfqq"/>
+
+                <EditText
+                    android:id="@+id/Change_City"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/kfkfqq"
+                    android:background="@drawable/loginbutton"
+                    android:ems="10"
+                    android:padding="10dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gg"
+                android:id="@+id/ll"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="State :"
+                    android:id="@+id/kfkfr"/>
+
+                <EditText
+                    android:id="@+id/Change_State"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/kfkfr"
+                    android:background="@drawable/loginbutton"
+                    android:ems="10"
+                    android:padding="10dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll"
+                android:id="@+id/eeeee"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pin :"
+                    android:id="@+id/kfkfqqq"/>
+
+                <EditText
+                    android:id="@+id/Change_Pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/kfkfqqq"
+                    android:background="@drawable/loginbutton"
+                    android:ems="10"
+                    android:padding="10dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/update"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eeeee"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/joinbutton"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Update"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

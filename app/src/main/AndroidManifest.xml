@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.phonekart">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".AdminFHShowActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".AdminSeeUserAddedPhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdminSeeProductPhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StartingActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EditAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ConfermOTP"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UserCostomerSupportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChangePasswardUserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SeeBuyingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditProductActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PhoneShowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OrderPlacedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReviewOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ConfermOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddProductDataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdminMaintainProductActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdminProductInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdminSeeOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdminUserInfoDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdminAddPhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdminAddUsersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdminCheckOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdminActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ADActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="Home"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.STSCom.NoActionBar" />
+        <activity
+            android:name=".AdminMainActivity"
+            android:label="Home"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.STSCom.NoActionBar" />
+        <activity
+            android:name=".JoinActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat" />
+    </application>
+
+</manifest>

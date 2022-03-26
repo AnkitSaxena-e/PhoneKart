@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="2dp"
+    android:layout_marginEnd="2dp"
+    android:layout_marginBottom="5sp"
+    android:background="@drawable/card_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/address_show_background"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/Product_Image_PP_SS"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_alignParentRight="true"/>
+
+
+            <TextView
+                android:id="@+id/Product_Name_PP_SS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Product Name"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/Address_BB_SS"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="5dp"
+                android:padding="5dp"
+                android:layout_toLeftOf="@+id/Product_Image_PP_SS"
+                android:layout_below="@+id/fgfg"
+                android:layout_marginTop="5dp"
+                android:text="jcbkjvbfkjbvjifbvjkbfjbvdfkjbvkjbfnbkjvfkjcbjlkfkj bcgkb kj" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:id="@+id/fgfg">
+
+            <TextView
+                android:id="@+id/setDasiReading_PS_PP_SS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="₹12350"
+                android:layout_centerVertical="true"
+                android:textSize="13sp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:id="@+id/nnoonneeaaaa"
+                android:layout_width="2dp"
+                android:layout_height="25dp"
+                android:paddingStart="5dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/main_back"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/setDasiReading_PS_PP_SS"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:id="@+id/Snr_PP_SS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@+id/nnoonneeaaaa"
+                android:text="S/R"
+                android:layout_centerVertical="true"
+                android:textSize="13sp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:id="@+id/nnoonneesd"
+                android:layout_width="2dp"
+                android:layout_height="25dp"
+                android:paddingStart="5dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/main_back"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/Snr_PP_SS"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15dp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:id="@+id/Color_PP_SS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@+id/nnoonneesd"
+                android:text="Color"
+                android:layout_centerVertical="true"
+                android:textSize="13dp"
+                android:textStyle="italic|bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Product_Image_PP_SS"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/Edit_PP_SS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/joinbutton"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="See It"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
